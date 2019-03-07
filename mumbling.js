@@ -1,6 +1,8 @@
-// My Solution
+// url: https://www.codewars.com/kata/5667e8f4e3f572a8f2000039
+
+// My solution
 // time complexity: n^2
-// space complexity: constant
+// space complexity: n
 
 function accum(s) {
   let strArr = s
@@ -22,7 +24,7 @@ function accum(s) {
   return strArr.join('');
 }
 
-// Other Solution
+// Other solution
 // time complexity: n^2
 // space complexity: constant
 
