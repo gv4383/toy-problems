@@ -8,6 +8,7 @@ const binaryArrayToNumber = arr => {
   let place = 0;
   let total = 0;
 
+  // start at end of array and iterate backwards
   for (let i = arr.length - 1; i >= 0; i--) {
     if (arr[i] === 0) {
       total += 0;

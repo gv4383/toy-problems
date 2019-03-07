@@ -5,18 +5,23 @@
 // space complexity: n
 
 function accum(s) {
+  // create an array of each individual letter separated by a '-'
   let strArr = s
     .toUpperCase()
     .split('')
     .join('-')
     .split('');
+
   let count = s.length;
 
+  // iterate through array
   for (let i = strArr.length - 1; i > 0; i--) {
     if (strArr[i] !== '-') {
+      // copy letter at index i, j times up to current count
       for (let j = 1; j < count; j++) {
         strArr.splice(i + 1, 0, strArr[i].toLowerCase());
       }
+      // decrement count everytime afterwards
       count -= 1;
     }
   }
