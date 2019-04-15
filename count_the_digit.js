@@ -1,8 +1,8 @@
 // url: https://www.codewars.com/kata/count-the-digit/javascript
 
 // My solution
-// time complexity:
-// space complexity:
+// time complexity: n^2
+// space complexity: n
 
 function nbDig(n, d) {
   let count = 0;
